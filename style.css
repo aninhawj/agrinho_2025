@@ -1,3 +1,9 @@
+:root{
+  --cor-de-fundo:#FFDF88;
+  --cor-de-texto:#FFA55D;
+  --cor-texto-dois:#328E6E;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #5c922f;
   color: #fff;
   padding: 10px 20px;
   display: flex;
