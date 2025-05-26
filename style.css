@@ -1,100 +1,121 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Da Semente ao Prato</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Define a fonte Inter para todo o corpo do documento */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
-</head>
-<body class="bg-gradient-to-br from-amber-100 to-orange-200 min-h-screen flex items-center justify-center py-12">
-    <div class="container mx-auto p-8 bg-white shadow-2xl rounded-3xl max-w-6xl w-full">
-        <header class="text-center mb-12">
-            <img src="Green Ecology .png" alt="Logo Strong Roots" class="mx-auto mb-4 w-32 h-32 object-contain">
-            <h1 class="text-6xl font-extrabold text-orange-800 leading-tight mb-4">
-                <span class="block">DA SEMENTE</span>
-                <span class="block">AO PRATO</span>
-            </h1>
-            <p class="text-xl text-gray-700">
-                Festejando a conexão do Campo à Cidade
-            </p>
-        </header>
+/* style.css */
 
-        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <section class="bg-amber-50 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
-                <h2 class="text-3xl font-bold text-amber-800 mb-4 flex items-center">
-                    <img src="https://placehold.co/60x60/FFFBEB/D97706?text=🌍" alt="Mundo" class="mr-3">
-                    Alimentos Culturais e Tradições
-                </h2>
-                <p class="text-gray-800 leading-relaxed mb-4">
-                    Acolhendo saberes ancestrais, nutrindo a diversidade cultural e fortalecendo as tradições alimentares.
-                </p>
-                <div class="text-center">
-                    <img src="https://placehold.co/150x150/FDF2F8/DB2777?text=Tradição" alt="Tradição" class="mx-auto rounded-full mb-4">
-                    <p class="text-xl font-semibold text-black">
-                        Cada alimento carrega uma história e um legado cultural.
-                    </p>
-                </div>
-                <ul class="list-disc list-inside text-gray-800 space-y-2 mt-4">
-                    <li>Cultivando tradições e saberes</li>
-                    <li>Aumentando a diversidade e acessibilidade</li>
-                </ul>
-            </section>
+/* Importa a fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
-            <section class="bg-orange-50 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
-                <h2 class="text-3xl font-bold text-orange-800 mb-4 flex items-center">
-                    <img src="https://placehold.co/60x60/FFF7ED/EA580C?text=✨" alt="Estrela" class="mr-3">
-                    Benefícios dos Alimentos da Estação
-                </h2>
-                <ul class="list-disc list-inside text-gray-800 space-y-2">
-                    <li><span class="font-bold text-black">Caqui:</span> Rico em vitaminas A e C, fibras e antioxidantes, essencial para a saúde da visão e imunidade.</li>
-                    <li><span class="font-bold text-black">Melancia:</span> Hidratante, com alto teor de água, vitaminas A e C, e licopeno, benéfico para o coração.</li>
-                    <li><span class="font-bold text-black">Morango:</span> Fonte de vitamina C, manganês e antioxidantes, ótimo para a pele e saúde cerebral.</li>
-                    <li><span class="font-bold text-black">Quiabo:</span> Contribui para a digestão, rico em fibras, vitamina K e folato.</li>
-                </ul>
-                <div class="mt-6 text-center">
-                    <img src="https://placehold.co/150x150/FEE2E2/EF4444?text=Nutrição" alt="Nutrição" class="mx-auto rounded-full mb-4">
-                    <p class="text-xl font-semibold text-black">
-                        ALIMENTO: ANTES DE NUTRIR O CORPO, NUTRE A CULTURA, A MENTE, AS RELAÇÕES.
-                    </p>
-                </div>
-            </section>
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: 'Inter', sans-serif; /* Aplica a fonte Inter */
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove preenchimento padrão do corpo */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura total */
+    line-height: 1.6; /* Define altura da linha para melhor legibilidade */
+    color: #333; /* Cor de texto padrão */
+}
 
-            <section class="bg-yellow-100 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
-                <h2 class="text-3xl font-bold text-yellow-800 mb-4 flex items-center">
-                    <img src="https://placehold.co/60x60/FEFCE8/CA8A04?text=🚚" alt="Caminhão" class="mr-3">
-                    Rotas de Entrega e Dados de Produção
-                </h2>
-                <p class="text-gray-800 leading-relaxed mb-4">
-                    Descubra como os alimentos chegam até você e os dados de produção que impulsionam essa jornada.
-                </p>
-                <div class="mt-6 text-center">
-                    <img src="https://placehold.co/150x150/FDF2F8/DB2777?text=Rotas" alt="Rotas" class="mx-auto rounded-full mb-4">
-                    <p class="text-xl font-semibold text-black">
-                        ACESSO ÀS ROTAS DE ENTREGA: Conectando o campo à sua mesa.
-                    </p>
-                </div>
-                <div class="mt-6">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Dados de Produção (em toneladas):</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-2">
-                        <li><span class="font-bold text-black">Estados Unidos:</span> 600</li>
-                        <li><span class="font-bold text-black">Mato Grosso:</span> Dados a serem inseridos</li>
-                        <li><span class="font-bold text-black">Paraná:</span> Dados a serem inseridos</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+/* Estilos para o contêiner principal */
+.container {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 20px; /* Preenchimento interno */
+    background-color: #fff; /* Cor de fundo branca */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
 
-        <footer class="text-center mt-12 pt-8 border-t border-gray-300 text-gray-600 text-sm">
-            &copy; 2025 Da Semente ao Prato. Todos os direitos reservados.
-        </footer>
-    </div>
-</body>
-</html>
+/* Estilos para o cabeçalho */
+header {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 40px; /* Margem inferior */
+}
 
+header h1 {
+    font-size: 3em; /* Tamanho da fonte do título principal */
+    color: #28a745; /* Cor verde para o título */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+header p {
+    font-size: 1.2em; /* Tamanho da fonte do parágrafo */
+    color: #666; /* Cor cinza para o parágrafo */
+}
+
+/* Estilos para as seções de conteúdo */
+main {
+    display: grid; /* Usa grid para o layout das seções */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 30px; /* Espaçamento entre as seções */
+}
+
+section {
+    background-color: #f9f9f9; /* Cor de fundo clara para as seções */
+    padding: 25px; /* Preenchimento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra mais suave */
+    transition: transform 0.3s ease-in-out; /* Transição suave para o hover */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Efeito de elevação no hover */
+}
+
+section h2 {
+    font-size: 1.8em; /* Tamanho da fonte dos títulos de seção */
+    color: #333; /* Cor escura para os títulos */
+    margin-bottom: 15px; /* Margem inferior */
+    border-bottom: 2px solid #eee; /* Linha inferior para separar */
+    padding-bottom: 10px; /* Preenchimento inferior */
+}
+
+section p, section ul {
+    font-size: 1em; /* Tamanho da fonte do texto */
+    color: #555; /* Cor de texto padrão */
+}
+
+section ul {
+    list-style-type: disc; /* Tipo de marcador de lista */
+    margin-left: 20px; /* Margem à esquerda para a lista */
+}
+
+section img {
+    max-width: 100%; /* Garante que as imagens não excedam a largura da seção */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin-top: 15px; /* Margem superior */
+    border-radius: 8px; /* Cantos arredondados para imagens */
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 40px; /* Margem superior */
+    padding-top: 20px; /* Preenchimento superior */
+    border-top: 1px solid #eee; /* Linha superior para separar do conteúdo */
+    color: #777; /* Cor cinza para o texto do rodapé */
+    font-size: 0.9em; /* Tamanho da fonte menor */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Reduz o tamanho do título em telas menores */
+    }
+
+    main {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em; /* Reduz ainda mais o título em telas muito pequenas */
+    }
+
+    section {
+        padding: 15px; /* Reduz o preenchimento das seções */
+    }
+
+    section h2 {
+        font-size: 1.5em; /* Reduz o tamanho dos títulos de seção */
+    }
+}
